@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import sayHello from './cli.js';
 
 function questionNumber() {
   return Math.floor(Math.random() * 100);
@@ -10,9 +11,7 @@ function evenCheck(number) {
   return false;
 }
 function evenGame() {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
+  const userName = sayHello();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let correctCounter = 1;
   while (correctCounter > 0) {
