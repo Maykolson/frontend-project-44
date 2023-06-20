@@ -1,17 +1,9 @@
 import readlineSync from 'readline-sync';
 import sayHello from './cli.js';
+import { randomNumber, evenCheck } from './index.js';
 
-function questionNumber() {
-  return Math.floor(Math.random() * 100);
-}
-function evenCheck(number) {
-  if (number % 2 === 0 && number !== 0) {
-    return true;
-  }
-  return false;
-}
+const userName = sayHello();
 function evenGame() {
-  const userName = sayHello();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let correctCounter = 1;
   while (correctCounter > 0) {
@@ -19,7 +11,7 @@ function evenGame() {
       console.log(`Congratulations, ${userName}!`);
       break;
     }
-    const question = questionNumber();
+    const question = randomNumber(1, 100);
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     let correctAnswer;
