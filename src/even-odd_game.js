@@ -16,7 +16,7 @@ function evenGame() {
   let correctCounter = 1;
   while (correctCounter > 0) {
     if (correctCounter === 4) {
-      console.log(`Congratulations! ${userName}`);
+      console.log(`Congratulations, ${userName}!`);
       break;
     }
     const question = questionNumber();
