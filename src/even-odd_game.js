@@ -3,10 +3,11 @@ import sayHello from './cli.js';
 import { randomNumber, evenCheck } from './index.js';
 
 const userName = sayHello();
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
 function evenGame() {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  let correctAnswer;
+  
   for (let i = 0; i < 3; i += 1) {
-    let correctAnswer;
     const number = randomNumber(0, 100);
 
     if (number % 2 === 0) {
