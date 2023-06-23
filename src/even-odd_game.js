@@ -3,10 +3,12 @@ import sayHello from './cli.js';
 import { randomNumber, evenCheck } from './index.js';
 
 const userName = sayHello();
+
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
+
+let correctAnswer;
+
 function evenGame() {
-  let correctAnswer;
-  
   for (let i = 0; i < 3; i += 1) {
     const number = randomNumber(0, 100);
 
@@ -17,6 +19,7 @@ function evenGame() {
     }
 
     console.log(`Question: ${number}`);
+    
     const answer = readlineSync.question('Your answer: ');
 
     if (answer === correctAnswer) {
