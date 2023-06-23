@@ -5,29 +5,27 @@ import { randomNumber, evenCheck } from './index.js';
 const userName = sayHello();
 function evenGame() {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  let correctCounter = 1;
-  while (correctCounter > 0) {
-    if (correctCounter === 4) {
-      console.log(`Congratulations, ${userName}!`);
-      break;
-    }
-    const question = randomNumber(1, 100);
-    console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question('Your answer: ');
+  for (let i = 0; i < 3; i += 1) {
     let correctAnswer;
-    if (evenCheck(question)) {
+    const number = randomNumber(0, 100);
+
+    if (number % 2 === 0) {
       correctAnswer = 'yes';
     } else {
       correctAnswer = 'no';
     }
-    if (userAnswer === correctAnswer) {
+
+    console.log(`Question: ${number}`);
+    const answer = readlineSync.question('Your answer: ');
+
+    if (answer === correctAnswer) {
       console.log('Correct!');
-      correctCounter += 1;
     } else {
-      correctCounter = 0;
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'\nLet's try again ${userName}!`);
-      break;
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
     }
   }
+  console.log(`Congratulations, ${userName}!`);
 }
 export default evenGame;
