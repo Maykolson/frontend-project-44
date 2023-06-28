@@ -15,13 +15,13 @@
   "author": "Tazenkov Vladimir <fadefaze@icloud.com> (https://ru.hexlet.io/u/vladimir_tazenkov)",
   "license": "ISC",
   "dependencies": {
-    "@hexlet/pairs": "^1.1.1",
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
+    "@hexlet/pairs": "github:hexlet-components/js-pairs",
     "eslint": "^8.43.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5"
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
