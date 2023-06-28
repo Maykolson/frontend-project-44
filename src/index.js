@@ -1,9 +1,31 @@
-/* eslint-disable linebreak-style */
-const randomNumber = (min, max) => Math.floor(Math.random() * (max - min) + 1) + min;
-const evenCheck = (number) => {
-  if (number % 2 === 0 && number !== 0) {
-    return true;
+import readlineSync from 'readline-sync';
+import { car, cdr } from '@hexlet/pairs';
+
+const randomNumber =  (a, b) => Math.round(a + Math.random() * (b - a));
+
+const numberOfSteps = 3;
+
+const playGame = (data, description) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  console.log(description);
+
+  for (let i = 0; i < numberOfSteps; i += 1) {
+    const result = data();
+    const question = car(result);
+    const rigthAnswer = cdr(result);
+    console.log(`Question: ${question}`);
+    const answer = readlineSync.question('Your answer: ');
+    if (answer === rigthAnswer) {
+      console.log('Correct!');
+    } else {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rigthAnswer}'.`);
+      console.log(`Let's try again, ${name}!`);
+      return;
+    }
   }
-  return false;
+  console.log(`Congratulations, ${name}!`);
 };
-export { randomNumber, evenCheck };
+export default playGame;
+export { randomNumber, playGame };
