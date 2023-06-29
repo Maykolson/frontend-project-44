@@ -3,8 +3,10 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/0d6c304a4b5364344af3/maintainability)](https://codeclimate.com/github/Maykolson/frontend-project-44/maintainability)
 
 Brain-even
-[![asciicast](https://asciinema.org/a/593741.svg)](https://asciinema.org/a/593741)
-[![asciicast](https://asciinema.org/a/dNHGaNdM7cpxP6VKsIxWjCZxq.svg)](https://asciinema.org/a/dNHGaNdM7cpxP6VKsIxWjCZxq)
+[![asciicast](https://asciinema.org/a/pHoOoCER23YJf1OQtkYxoQTAM.svg)](https://asciinema.org/a/pHoOoCER23YJf1OQtkYxoQTAM)
 
 Brain-calc
-[![asciicast](https://asciinema.org/a/X75k0T2HVM4ScVY5egoFf67XQ.svg)](https://asciinema.org/a/X75k0T2HVM4ScVY5egoFf67XQ)
+[![asciicast](https://asciinema.org/a/OCb1vxz0UuAyvvI8IgR5QpHTx.svg)](https://asciinema.org/a/OCb1vxz0UuAyvvI8IgR5QpHTx)
+
+Brain-gcd
+[![asciicast](https://asciinema.org/a/xcc40wZ4qxKlL5Iis5MF8N8xw.svg)](https://asciinema.org/a/xcc40wZ4qxKlL5Iis5MF8N8xw)
