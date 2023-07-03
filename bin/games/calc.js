@@ -1,5 +1,6 @@
 import { cons } from '@hexlet/pairs';
-import { randomNumber, playGame } from '../../src/index.js';
+import { playGame } from '../../src/index.js';
+import randomNumber from '../../src/utils.js';
 
 const description = 'What is the result of the expression?';
 
