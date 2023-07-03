@@ -7,7 +7,7 @@ const description = 'What is the result of the expression?';
 const operators = [
   '+',
   '-',
-  '*'
+  '*',
 ];
 
 const operation = (num1, num2, operator) => {
@@ -18,7 +18,11 @@ const operation = (num1, num2, operator) => {
       return num1 - num2;
     case '*':
       return num1 * num2;
+    default:
+      break;
   }
+
+  return num1;
 };
 
 const data = () => {

@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
 
-const randomNumber =  (a, b) => Math.round(a + Math.random() * (b - a));
+const randomNumber = (a, b) => Math.round(a + Math.random() * (b - a));
 
 const numberOfSteps = 3;
 
