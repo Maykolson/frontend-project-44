@@ -7,10 +7,9 @@ const numberOfSteps = 3;
 
 const playGame = (data, description) => {
   console.log('Welcome to the Brain Games!');
-  console.log(description);
-  console.log('');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
+  console.log(description);
 
   for (let i = 0; i < numberOfSteps; i += 1) {
     const result = data();
